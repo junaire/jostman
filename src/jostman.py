@@ -3,6 +3,11 @@ import requests
 import json
 import os
 
+
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+
 headers = {
     'Connection': 'keep-alive',
     'Pragma': 'no-cache',
